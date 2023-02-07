@@ -1,0 +1,53 @@
+<html>
+<head>
+    <title>Kalkulator</title>
+</head>
+<body>
+<script type="text/javascript">
+    <h3>Kalkulator</h3>
+var operacja = prompt("operacja (+, -, *, /)", "+");
+var liczba1 = +prompt("Liczba 1", 0);
+var liczba2 = +prompt("Liczba 2", 0);
+
+switch (operacja) {
+    case "+":
+        document.body.textContent = liczba1 + "+" + liczba2 + "=" + (liczba1 + liczba2);
+        break;
+    case "-":
+        document.body.textContent = liczba1 + "-" + liczba2 + "=" + (liczba1 - liczba2);
+        break;
+    case "*":
+        document.body.textContent = liczba1 + "*" + liczba2 + "=" + (liczba1 * liczba2);
+        break;
+    case "/":
+        document.body.textContent = liczba1 + "/" + liczba2 + "=" + (liczba1 / liczba2);
+        break;
+    default:
+        document.body.textContent = "Nieznana operacja";
+        break;
+}
+</script>
+<h3>Kalkulator</h3>
+ 
+<script type="text/javascript"> 
+/*(...)*/
+ </script>
+ <script type="text/javascript">
+    var x = prompt("Podaj pierwszą liczbę","");
+    var y = prompt("Podaj drugą liczbę","");
+    var dzialanie = prompt("wybierz działanie\nd - dodawanie\no - odejmowanie\nm - mnożenie\ndd - dzielenie","");
+    
+    x = parseInt(x);
+    y = parseInt(y);
+    var tmp = null;
+    var tmp_d = null;
+    switch(dzialanie){
+        case "d" : tmp = x + y; tmp_d = ' + '; break;
+        case "m" : tmp = x * y; tmp_d = ' * '; break;
+        case "o" : tmp = x - y; tmp_d = ' - '; break;
+        case "dd" : tmp = x / y; tmp_d = ' / '; break;
+    }
+    document.write(x + tmp_d + y + " = " + tmp );
+</script>
+</body>
+</html>
